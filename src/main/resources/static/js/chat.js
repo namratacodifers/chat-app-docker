@@ -4,7 +4,7 @@ let stompClient;
 
 function initAll(){
 	
-	let socket = new SockJS("http://localhost:8080/codifers-chat/chatCodifers");
+	let socket = new SockJS("http://localhost:8080/chatCodifers");
 	stompClient = Stomp.over(socket);
 	
 	stompClient.connect({},function(frame){
