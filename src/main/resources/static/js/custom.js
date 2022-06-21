@@ -21,7 +21,7 @@ function getAllMessages(clientUser){
 	
 	$.ajax({
 		
-		url: serverURL+"get-all-messages",
+		url: serverURL+"/get-all-messages",
 		type: "POST",
 		contentType: "application/json",
 		data: JSON.stringify(json),
