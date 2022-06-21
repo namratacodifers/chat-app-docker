@@ -3,8 +3,8 @@ window.onload = initAll;
 let stompClient;
 
 function initAll(){
-	
-	let socket = new SockJS("http://localhost:8080/chatCodifers");
+	let hostName = window.location.origin;
+	let socket = new SockJS(hostName+"/chatCodifers");
 	stompClient = Stomp.over(socket);
 	
 	stompClient.connect({},function(frame){
