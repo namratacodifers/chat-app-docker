@@ -69,7 +69,7 @@
 
     var currentUser = /*[[${codifersClientUser}]]*/ null;
     console.log(currentUser);
-    var serverURL = "http://localhost:8080/codifers-chat/";
+    var serverURL = window.location.origin;
 
 /*]]>*/
 </script>
